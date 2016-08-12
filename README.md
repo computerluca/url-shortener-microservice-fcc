@@ -7,11 +7,16 @@ FreeCodeCamp API Basejump: URL Shortener Microservice
     When I visit that shortened URL, it will redirect me to my original link.
 
 Example creation usage:
-https://little-url.herokuapp.com/new/https://www.google.com
-https://little-url.herokuapp.com/new/http://foo.com:80
+https://url-shortener-microservice-fcc-computerluca.c9users.io/new/http://www.google.com
 Example creation output
-{ "original_url":"http://foo.com:80", "short_url":"https://little-url.herokuapp.com/8170" }
+{"old_url":"http://www.google.como","new":"SJ2ccust"}
 Usage:
-https://little-url.herokuapp.com/2871
+https://url-shortener-microservice-fcc-computerluca.c9users.io/SJ2ccust
 Will redirect to:
 https://www.google.com/
+You can also use the route /delete/:name to delete a url.
+https://url-shortener-microservice-fcc-computerluca.c9users.io/delete/SJ2ccust
+To delete a link you have to pass the minified url to the route delete
+
+
+
